@@ -95,23 +95,23 @@ def verwijder_speler(speler_id: int, db: Session = Depends(get_db)):
     crud.delete_player(db=db, speler_id=speler_id)
     return {"message": f"succesvol verwijderd speler met id: {speler_id}"}
 
-@app.post("/spelers/{speler_id}/compititie/", response_model=schemas.Single)
-def maak_enkelspel_voor_speler(
-    speler_id: int, enkelspel: schemas.SingleCreate, db: Session = Depends(get_db)
+@app.post("/spelers/{speler_id}/compititie/", response_model=schemas.Compititie)
+def maak_compititie_voor_speler(
+    speler_id: int, compititie: schemas.CompititieCreate, db: Session = Depends(get_db)
 ):
-    return crud.maak_speler_enkelspel(db=db, enkelspel=enkelspel, speler_id=speler_id)
+    return crud.maak_speler_compititie(db=db, compititie=compititie, speler_id=speler_id)
 
 
-@app.get("/compititie/", response_model=list[schemas.Single])
-def lees_enkelspel(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
-    enkelspel = crud.get_enkelspel(db, skip=skip, limit=limit)
-    return enkelspel
+@app.get("/compititie/", response_model=list[schemas.Compititie])
+def lees_compititie(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+    compititie = crud.get_compititie(db, skip=skip, limit=limit)
+    return compititie
 
 
 @app.delete("/compititie/{compititie_id}")
-def verwijder_enkelspel(compititie_id: int, db: Session = Depends(get_db)):
-    crud.verwijder_enkelspel(db=db, compititie_id=compititie_id)
-    return {"message": f"succesvol verwijderd enkelspel met id: {compititie_id}"}
+def verwijder_compititie(compititie_id: int, db: Session = Depends(get_db)):
+    crud.verwijder_compititie(db=db, compititie_id=compititie_id)
+    return {"message": f"succesvol verwijderd compititie met id: {compititie_id}"}
 
 @app.post("/spelers/{speler_id}/beker/", response_model=schemas.Beker)
 def maak_beker_voor_speler(
@@ -120,7 +120,7 @@ def maak_beker_voor_speler(
     return crud.maak_speler_beker(db=db, beker=beker, speler_id=speler_id)
 
 
-@app.get("/beker/", response_model=list[schemas.Dubble])
+@app.get("/beker/", response_model=list[schemas.Beker])
 def lees_beker(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
     beker = crud.get_beker(db, skip=skip, limit=limit)
     return beker
