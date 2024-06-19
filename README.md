@@ -18,7 +18,7 @@ Op mijn front-end heb ik gewerkt met 1 post en 2 gets. Er is een GET om het id v
 
 Link naar frond-end Github Repository:
 
-https://github.com/Jarne-Drijbooms/frontend-project2
+https://github.com/Jarne-Drijbooms/frontend_herexamen_API
 
 ** link naar hosted front-end **
 
