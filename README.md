@@ -22,4 +22,4 @@ https://github.com/Jarne-Drijbooms/frontend_herexamen_API
 
 ** link naar hosted front-end **
 
-https://6592d3340ce0fbd0f9bd9bee--singular-meringue-4e3e1d.netlify.app/
+herexamen2024-jarne.netlify.app
