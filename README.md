@@ -2,7 +2,7 @@
 
 Beschrijving van project :
 
-Ik heb voor dit project gekozen om te werken met het onderwerp voetbal. Dit heb ik gekozen omdat ik voetbal we een interessant onderwerp vindt. In dit project kan men een speler toevoegen, inlezen en daarnaast ook verwijderen met een DELETE. Daarnaast heb ik dan ook gewerkt met posts waardoor ik voor elke speler een post zou kunnen maken om extra informatie over de speler mee te geven. Deze posts kan je bijwerken door gebruik te maken van een PUT en kunnen daarnaast ook verwijderd worden door een DELETE.
+Ik heb voor dit project gekozen om te werken met het onderwerp voetbal. Dit heb ik gekozen omdat ik voetbal wel een interessant onderwerp vindt aangezien ik zelf ook voetbal en er veel interesse in heb. In dit project kan men een speler toevoegen, inlezen en daarnaast ook verwijderen met een DELETE. Daarnaast heb ik dan ook gewerkt met posts waardoor ik voor elke speler een post zou kunnen maken om extra informatie over de speler mee te geven. Deze posts kan je bijwerken door gebruik te maken van een PUT en kunnen daarnaast ook verwijderd worden door een DELETE.
 
 Beschrijving van de API:
 
@@ -22,4 +22,4 @@ https://github.com/Jarne-Drijbooms/frontend_herexamen_API
 
 ** link naar hosted front-end **
 
-herexamen2024-jarne.netlify.app
+https://herexamen2024-jarne.netlify.app/

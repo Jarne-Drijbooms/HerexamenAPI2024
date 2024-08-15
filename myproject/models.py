@@ -27,7 +27,7 @@ class Compititie(Base):
     id = Column(Integer, primary_key=True, index=True)
     hoogste_positie = Column(Integer, index=True)
     huidige_positie = Column(Integer, index=True)
-    compititie_id = Column(Integer, ForeignKey("spelers.id"))
+    compititie_id = Column(Integer, ForeignKey("players.id"))
 
     compietitie = relationship("player", back_populates="compititie")
 
@@ -37,6 +37,6 @@ class Beker(Base):
     id = Column(Integer, primary_key=True, index=True)
     hoogste_positie = Column(Integer, index=True)
     huidige_positie = Column(Integer, index=True)
-    beker_id = Column(Integer, ForeignKey("spelers.id"))
+    beker_id = Column(Integer, ForeignKey("players.id"))
 
     beker = relationship("player", back_populates="beker")
