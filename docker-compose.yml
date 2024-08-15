@@ -1,7 +1,7 @@
 version: "3.9"
 services:
  useritem-api-service:
-  image: jarne-drijbooms/ApiHerexaam2024
+  image: jarne-drijbooms/apiherexaam2024
   ports:
     - "8000:8000"
   volumes:
